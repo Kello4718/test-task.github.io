@@ -1,0 +1,53 @@
+@include font("Roboto Light", "Roboto-Light", 300);
+@include font("Roboto", "Roboto", 400);
+@include font("Roboto Medium", "Roboto-Medium", 500);
+@include font("Roboto Bold", "Roboto-Bold", 700);
+
+.html {
+  height: 100%;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  font-style: normal;
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  font-size: inherit;
+  line-height: inherit;
+  box-sizing: inherit;
+}
+
+.body {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  padding: 0;
+  margin: -1px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-style: none;
+}

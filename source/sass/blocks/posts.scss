@@ -1,0 +1,130 @@
+.posts {
+  width: 100%;
+  max-width: 1280px;
+  font-family: 'Roboto';
+  background: #00000087;
+  padding: 50px 0;
+  margin: 0 auto;
+  @include mobile {
+    padding: 25px 0;
+  }
+}
+
+.posts__title {
+  font-family: 'Roboto Bold';
+  font-size: 30px;
+  line-height: 150%;
+  text-align: center;
+  color: deepskyblue;
+  margin: 0 0 50px;
+  @include mobile {
+    margin: 0 0 25px;
+  }
+}
+
+.posts__search {
+  width: 50%;
+  font-family: 'Roboto Bold';
+  font-size: 20px;
+  line-height: 150%;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  outline: 1px solid black;
+  padding: 5px 10px;
+  margin: 0 auto 50px;
+  &:focus {
+    outline: 1px solid deepskyblue;
+  }
+  @include mobile {
+    width: calc(100% - 50px);
+    margin: 0 auto 25px;
+  }
+}
+
+.posts__list {
+  height: auto;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 50px;
+  margin: 0;
+  @include mobile {
+    grid-template-columns: 1fr;
+    padding: 0 25px 25px 25px;
+  }
+}
+
+.posts__item {
+  position: relative;
+  background: white;
+  border: 1px solid deepskyblue;
+  border-radius: 0 0 10% 10%;
+  padding: 0 10px 10px;
+}
+
+.posts__item-id {
+  width: 30px;
+  height: 30px;
+  font-family: 'Roboto Bold';
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid deepskyblue;
+  border-radius: 0 0 50% 50%;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.posts__item-title {
+  font-family: 'Roboto Bold';
+  text-align: center;
+  font-size: 18px;
+  color: deepskyblue;
+}
+
+.posts__item-description {
+  text-align: center;
+}
+
+.posts__item-button-delete {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('../img/close.svg') no-repeat 0 0 / 15px 15px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.posts__button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 50px 0;
+  @include mobile {
+    padding: 0 25px;
+  }
+}
+
+.posts__button-prev,
+.posts__button-next {
+  user-select: none;
+  color: white;
+  background: deepskyblue;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.posts__button-prev.disabled,
+.posts__button-next.disabled {
+  opacity: 50%;
+  pointer-events: none;
+  cursor: not-allowed;
+}

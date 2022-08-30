@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Тестовое задание для ИП Яновский Алексей Павлович">
+  <title>Тестовое задание</title>
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Light.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Bold.woff" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css"/>
+</head>
+<body class="body">
+  <main class="main">
+    <section class="posts">
+      <h2 class="posts__title">Посты</h2>
+      <input class="posts__search" type="search" placeholder="Введите текст...">
+      <ul class="posts__list"></ul>
+      <div class="posts__button-container">
+        <button class="posts__button-prev">Предыдущая</button>
+        <button class="posts__button-next">Следующая</button>
+      </div>
+    </section>
+    <section class="add-post">
+      <h2 class="add-post__title">Добавить пост</h2>
+      <form class="add-post__form" action="">
+        <fieldset class="add-post__form-title">
+          <label>
+            <span>Введите заголовок поста</span>
+            <input class="add-post__form-title-input" type="text">
+          </label>
+        </fieldset>
+        <fieldset class="add-post__form-description">
+          <label>
+            <span>Введите описание поста</span>
+            <textarea class="add-post__form-description-textarea"></textarea>
+          </label>
+        </fieldset>
+        <button class="add-post__form-button-reset" type="reset">Очистить форму</button>
+        <button class="add-post__form-button-create">Создать пост</button>
+      </form>
+    </section>
+  </main>
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>

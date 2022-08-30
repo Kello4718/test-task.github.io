@@ -1,0 +1,127 @@
+.add-post {
+  width: 100%;
+  max-width: 1280px;
+  background: #00000087;
+  padding: 0 50px 50px;
+  margin: 0 auto;
+  @include mobile {
+    padding: 0 25px 25px;
+  }
+}
+
+.add-post__title {
+  font-family: 'Roboto Bold';
+  font-size: 30px;
+  line-height: 150%;
+  text-align: center;
+  color: deepskyblue;
+  margin: 0 0 50px;
+  @include mobile {
+    margin: 0 0 25px;
+  }
+}
+
+.add-post__form {
+  width: 75%;
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.add-post__form-title {
+  grid-column: 1 / -1;
+  border: none;
+  border-bottom: 1px solid deepskyblue;
+  margin: 0 0 20px;
+}
+
+.add-post__form-title label {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @include mobile {
+    flex-flow: column;
+    gap: 10px 0;
+  }
+}
+
+.add-post__form-title-input {
+  border: none;
+  border-radius: 10px;
+  outline: 1px solid black;
+  padding: 0 10px;
+  &:focus {
+    border: none;
+    outline: 1px solid deepskyblue;
+  }
+}
+
+.add-post__form-description {
+  grid-column: 1 / -1;
+  border: none;
+  border-bottom: 1px solid deepskyblue;
+  margin: 0 0 20px;
+}
+
+.add-post__form-description label {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @include mobile {
+    flex-flow: column;
+    gap: 10px 0;
+  }
+}
+
+.add-post__form-description-textarea {
+  width: 60%;
+  min-height: 200px;
+  height: max-content;
+  resize: none;
+  border: none;
+  border-radius: 10px;
+  outline: 1px solid black;
+  padding: 0 10px;
+  &:focus {
+    border: none;
+    outline: 1px solid deepskyblue;
+  }
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.add-post__form-button-reset {
+  width: max-content;
+  justify-self: center;
+  color: white;
+  background: red;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  @include mobile {
+    padding: 5px;
+  }
+}
+
+.add-post__form-button-create {
+  width: max-content;
+  justify-self: center;
+  color: white;
+  background: deepskyblue;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  @include mobile {
+    padding: 5px;
+  }
+}
